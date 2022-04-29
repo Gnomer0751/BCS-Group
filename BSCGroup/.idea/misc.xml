@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/andre/Downloads/BSC-Group/BSCGroup/app/src/main/res/layout/activity_main.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/andre/Downloads/BSC-Group/BSCGroup/app/src/main/res/layout/bcs_calendar_widget.xml" value="0.2115036231884058" />
+        <entry key="..\:/Users/andre/Downloads/BSC-Group/BSCGroup/app/src/main/res/layout/bcs_eats_home.xml" value="0.10677083333333333" />
+        <entry key="..\:/Users/andre/Downloads/BSC-Group/BSCGroup/app/src/main/res/layout/bcs_tech_home.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/andre/Downloads/BSC-Group/BSCGroup/app/src/main/res/layout/calendar_iframe_view.xml" value="0.23072916666666668" />
+        <entry key="..\:/Users/andre/Downloads/BSC-Group/BSCGroup/app/src/main/res/mipmap-anydpi-v26/calendar.xml" value="0.198" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

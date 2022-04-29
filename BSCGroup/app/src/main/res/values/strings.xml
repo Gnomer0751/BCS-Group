@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BSC-Group</string>
+    <string-array name="bcs_group_listings">
+        <item>BCS Calendar</item>
+        <item>BCS Eats</item>
+        <item>BCS Tech</item>
+
+    </string-array>
+</resources>
