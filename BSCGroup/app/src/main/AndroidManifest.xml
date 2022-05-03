@@ -29,6 +29,10 @@
         <activity android:name=".CalendarIframeView" android:label="calendar_iframe_view" />
         <activity android:name=".BcsEatsHome" android:label="calendar_iframe_view" />
         <activity android:name=".BcsTechHome" android:label="calendar_iframe_view" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

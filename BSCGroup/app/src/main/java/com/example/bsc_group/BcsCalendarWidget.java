@@ -13,6 +13,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ImageButton;
+
 public class BcsCalendarWidget extends AppCompatActivity {
     public View view;
     public WebView webView;
@@ -27,7 +29,7 @@ public class BcsCalendarWidget extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("https://bcs-calendar.com/wp-content/themes/twentytwentyone/eventon-iframe-widget.php");
         Intent calendarIframeView = new Intent(this, CalendarIframeView.class);
-        Button button = (Button) findViewById(R.id.calendarButton);
+        ImageButton button = (ImageButton) findViewById(R.id.calendarButton);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(calendarIframeView);

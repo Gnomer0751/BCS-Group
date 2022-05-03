@@ -1,52 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#600025"
+    android:foregroundTint="#800000"
     tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/imageButtonTech"
-        android:layout_width="wrap_content"
-        android:layout_height="322dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="239dp"
         android:background="@android:color/transparent"
         android:padding="0dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/TechBCS.png" />
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tech_bcs" />
 
     <ImageButton
         android:id="@+id/imageButtonFood"
         android:layout_width="match_parent"
-        android:layout_height="254dp"
+        android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-37dp"
         android:background="@android:color/transparent"
-        android:padding="0dp"
-        android:scaleType="fitXY"
 
-        app:srcCompat="@mipmap/food_foreground" />
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonCalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dining_bcs" />
 
     <ImageButton
         android:id="@+id/imageButtonCalendar"
-        android:layout_width="415dp"
-        android:layout_height="361dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-4dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="-53dp"
         android:background="@android:color/transparent"
         android:padding="0dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@mipmap/calendar_foreground" />
-</RelativeLayout>
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/calendar_bcs" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="31dp"
+        android:fontFamily="@font/allerta"
+        android:text="@string/home_text"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
