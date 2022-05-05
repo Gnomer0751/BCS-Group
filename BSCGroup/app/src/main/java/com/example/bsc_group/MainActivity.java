@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebChromeClient(new WebChromeClient());
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);
         webView.loadUrl("https://bcs-calendar.com/wp-content/themes/twentytwentyone/eventon-iframe-widget.php");
         Intent calendarIntent = new Intent(this, BcsCalendarWidget.class);
         Intent techIntent = new Intent(this, BcsTechHome.class);

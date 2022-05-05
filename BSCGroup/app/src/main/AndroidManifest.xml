@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/bcs_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.BSCGroup"
+        android:hardwareAccelerated ="true"
         >
 
         <activity
