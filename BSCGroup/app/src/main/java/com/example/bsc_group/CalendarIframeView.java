@@ -4,7 +4,6 @@ import android.view.WindowManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-
 import androidx.appcompat.app.AppCompatActivity;
 public class CalendarIframeView extends AppCompatActivity {
     public WebView webView;
