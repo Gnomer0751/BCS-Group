@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bsc_group">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bcs_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bcs_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BSCGroup"
+        >
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.calendarIntent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BcsCalendarWidget" android:label="bcs_calendar_widget" />
+        <activity android:name=".CalendarIframeView" android:label="calendar_iframe_view" />
+        <activity android:name=".BcsEatsHome" android:label="calendar_iframe_view" />
+        <activity android:name=".BcsTechHome" android:label="calendar_iframe_view" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
